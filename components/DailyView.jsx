@@ -65,7 +65,7 @@ const DailyView = ({ selectedDate, events, setSelectedDate }) => {
 
           return (
             // I want a onclick function which change const [selectedDate, setSelectedDate] = useState(new Date()); if we click on it 
-            <div key={day.toISOString()} className={`p-2 rounded ${isSelected ? 'bg-red-300 bg-opacity-55' : 'bg-white'} cursor-pointer w-[60%]`}
+            <div key={day.toISOString()} className={`p-2 rounded ${isSelected ? 'bg-red-300 bg-opacity-55' : 'bg-white'} cursor-pointer md:w-[60%]`}
               onClick={() => setSelectedDate(day)}
             >
               <h4 className={`text-sm font-semibold mb-1 flex flex-col items-center gap-2 ${isSelected ? 'text-pink-600' : 'bg-white'}`}>
