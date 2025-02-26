@@ -55,7 +55,7 @@ const DailyView = ({ selectedDate, events, setSelectedDate }) => {
   return (
     <div className='flex flex-col gap-8'>
 
-      <div className="grid grid-cols-7 gap-4 px-10">
+      <div className="grid grid-cols-7 gap-2 md:gap-4 md:px-10">
         {weekDays.map(day => {
           const dayEvents = events.filter(event =>
             isWithinInterval(event.start, { start: day, end: day })
